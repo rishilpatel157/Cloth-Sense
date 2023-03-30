@@ -5,50 +5,777 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Project-1</title>
-        <link rel="stylesheet" href="/gusty-cover-2254/css/index.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+        <!-- <link rel="stylesheet" href="/gusty-cover-2254/css/index.css"> -->
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple"> -->
         <script src="https://kit.fontawesome.com/0771c102d1.js" crossorigin="anonymous"></script>
-        <script src="/gusty-cover-2254/scripts/index.js"></script>
-</head>
-<body>
-    <div id="nav">
-        <div class="logo">
-            <img src="/gusty-cover-2254/premiumlogo/onlinelogomaker-032723-2135-2711.png" alt="">
-        </div>
-        <div class="cat">
-       <b>
-             <p>
-                   COLLECTION
-             </p>
-             <p>
-                CATEGORIES
-             </p>
-          <p>
-            OFFICIAL MERCENDIES
-          </p>
-      <p>
-        TOP SELLING
-      </p>
+       <style>
+        * {
+    margin: 0;
+    color: black;
 
-    </b>
+    padding: 0px;
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-      </div>
-        <div class="user">
-            <a href=""><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
-            <a href=""><i class="fa-regular fa-user" style="color: #000000;"></i></a>
-            <a href=""><i class="fa-regular fa-star" style="color: #000000;"></i></a>
-            <a href=""><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
-        </div>
-    </div>
+    scroll-behavior: smooth;
+    /* transition: 2s; */
+    /* scroll-padding-top: 4rem; */
 
-    <div id="left-side" class="side">
-           <h1 class="title">SHOPPING
-           IS ALWAYS
-           A GOOD
-           IDEA</h1>
-    </div>
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {  
+    background-color:white;
+    margin: 0px;
+  }
+  
+  .side {
+    display: grid;
+    height: 91vh;
+    overflow: hidden;
+    place-items: center;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .side .title {
+    font-family: "Rubik", sans-serif;
+    font-size: 7vw;
+    margin: 0px 10vw;
+    width: 80vw;
+  }
+  
+  .side .fancy {
+    font-family: "Lobster", cursive;
+    font-size: 1.3em;
+    line-height: 0.8em;
+  }
+  
+  #left-side {
+    background-color:#ed1c94;
+    width: 60%;
+    z-index: 2;
+  }
+  
+  #left-side .title {  
+    color: white;  
+  }
+  
+  #left-side .fancy {
+    color:antiquewhite;
+  }
+  
+  #right-side {
+    background-color:#ffdf38;
+  }
+  
+  #right-side .title {
+    color:black;
+  }
+  
+  #right-side .fancy {
+    color: white;
+  }
+  
+  
+.nav {
+    display: flex;
+    background-color: #ffdf38;
+
+}
+.navlist{
+    width: 60%;
+    background-color: #ffdf38;
+    display: flex;
+     align-items: center;
+     justify-content: space-around;
+}
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+    height: 90px;
     
- </div>
+}
+ .navlist li{
+list-style: none;
+  font-size: 1.5rem;
+  padding: 10px;     
+ }
+ .navlist li a{
+    text-decoration: none;
+ }
+ .navlist li a:hover{
+
+text-decoration: none;
+color: #ed1c94;
+
+ }
+
+.user a {
+     margin-left: 30px;
+  
+     border-radius: 50%;
+     width: 80px;
+     height: 80px;
+     text-align: center;
+     position: relative;
+     overflow: hidden;
+}
+.user {
+    display: flex;
+    width: 40%;
+    background-color: #ffdf38;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.user  a .fa-solid{
+font-size: 30px;
+line-height: 80px;
+position: relative;
+z-index: 10;
+}
+ 
+.user  a .fa-regular{
+    font-size: 30px;
+    line-height: 80px;
+    position: relative;
+z-index: 10;
+    }
+    .user  a::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: -90px;
+        left: 0px;
+        background: white;
+        position: absolute;
+        transition: 0.5s;
+    }
+    .user a:hover::after{
+        top: 0px;
+       
+    }
+
+    .burger {
+     position: absolute ;
+     cursor: pointer;
+      right: 50%;
+     top: 15px;
+     display: none;
+
+    }
+    .line {
+        width: 33px;
+        background-color: black;
+        height: 4px;
+        margin: 5px 5px;
+    }
+
+    main {
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y proximity;
+    }
+
+    main > section {
+        height: 100vh;
+    
+        justify-content: center;
+        align-items: center;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
+
+
+    .toppp {
+    margin-top: 9vh;
+    padding-bottom: 91vh;
+    }
+
+    #collection {
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+        display: flex;
+         
+         align-items: center;
+       
+    }
+    
+    
+
+    #categories {
+        height: 100vh;
+        background-color: black;
+        display: grid;
+        padding: 150px;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+        /* padding-bottom: 200px; */
+        padding-top: 200px;
+    }
+    #categories > div {
+        height: 90%;
+        width: 90%;
+        border-radius: 25px;
+    }
+   
+    
+    
+    #officialmercendies {
+        height: 100vh;
+        background-color: wheat;
+    }
+    #topselling {
+        height: 100vh;
+        background-color: yellow;
+    }
+    .sticky{
+        position: fixed;
+        top: 0;
+        width: 100vw;
+    }
+    section {
+        display: grid;
+       
+        min-height: 100vh;
+    }
+
+    .hidden {
+        opacity: 0;
+        transition: all 1.5s;
+        filter: blur(10px);
+    }
+    
+    
+    
+    .show {
+        filter: blur(0px);
+        opacity: 1;
+    }
+   
+
+    #categories img {
+        width: 330px;
+        height: 275px;
+        border-radius: 25px;
+    }
+
+    #container {
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }   
+
+
+    .slides {
+        scroll-snap-align: start;
+    }
+       /* scroll */
+
+       .myslides {
+        display: none;
+       }
+
+       #slideshow img{
+        width: 100vw;
+        height: 60vh;
+
+
+       }
+
+      
+       #slideshow {
+        padding-top: 130px;
+        
+       }
+       .prev,.next{
+        cursor: pointer;
+        top: 50%;
+        position: absolute;
+        padding: 15px;
+        font-weight: bold;
+        font-size: 50px;
+        transition: 0.8s ease;
+        color: #ed1c94;
+        border-radius: 10px;
+       }
+
+       .next{
+        right: 0;
+       }
+
+       .prev:hover,.next:hover {
+        background-color: #ffdf38;
+        color: #000000;
+       }
+
+  
+
+
+
+
+    @media only screen and (max-width:1200px) and (min-width:999px){
+         .navlist {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+            overflow: visible;
+         }
+
+         .height{
+            height: 60px;
+            transition: 0.5s;
+        
+         }
+         .vis-res {
+            opacity: 0;
+        
+         }
+         .burger{
+            display: block;
+         }
+      
+         .user {
+            flex-direction:column;
+            
+         }
+         .navsecond {
+            display: none;
+         }
+         #categories {
+            grid-template-columns: repeat(3,1fr);
+            padding-bottom: 150px;
+            padding: 10px;
+            height: 115vh;
+            padding-top: 100px;
+
+         }
+         #categories > div {
+            margin: auto;
+         }
+         
+
+    }
+    @media only screen and (max-width:700px)
+    {
+        .navlist {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+            overflow: visible;
+         }
+
+         .height{
+            height: 60px;
+            transition: 0.5s;
+        
+         }
+         .vis-res {
+            opacity: 0;
+        
+         }
+         .burger{
+            display: block;
+         }
+      
+         .user {
+            flex-direction:column;
+            
+         }
+         .navsecond {
+            display: none;
+         }
+        .prev,.next{
+            font-size: 11px;
+        }
+
+        #categories {
+        grid-template-columns: repeat(1,1fr);
+        
+      margin: auto;
+      height: 282vh;
+      padding-top: 100px;
+
+
+
+         }
+         #categories > div {
+            margin: auto;
+         }
+    }
+    @media only screen and (max-width:1000px) and (min-width:699px)
+    {
+        .navlist {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+            overflow: visible;
+         }
+
+         .height{
+            height: 60px;
+            transition: 0.5s;
+        
+         }
+         .vis-res {
+            opacity: 0;
+        
+         }
+         .burger{
+            display: block;
+         }
+      
+         .user {
+            flex-direction:column;
+            
+         }
+         .navsecond {
+            display: none;
+         }
+        #categories {
+            grid-template-columns: repeat(2,1fr);
+        
+           margin: auto;
+           height: 149vh;
+           padding-top: 100px;
+
+
+         }
+         #categories > div {
+            margin: auto;
+         }
+       
+    }
+    
+
+        
+    
+   
+       </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="slides">
+       <section class="hidden">
+       
+        <div  class="nav sticky height h-res  ">
+            <ul class="navlist vis-res">
+                <div class="logo">
+                    <a  href=""><img  class="gotop" src="./premiumlogo/onlinelogomaker-032723-2135-2711.png" alt=""></a>
+                </div>
+                
+               <li><a href="#collection">COLLECTION</a></li>
+               <li><a href="#categories">CATEGORIES</a></li>
+               <li><a href="#topselling">TOP SELLING</a></li>
+               <li><a href="#ABOUTUS"> ABOUT US</a></li>
+                        
+            </ul>    
+               
+
+          
+            <div class="user vis1-res">
+                <a href=""><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
+                <a href=""><i class="fa-regular fa-user" style="color: #000000;"></i></a>
+                <a href=""><i class="fa-regular fa-star" style="color: #000000;"></i></a>
+                <a href=""><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
+            </div>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                
+
+            </div>
+        </div>
+        <div class="toppp">
+        <div id="left-side" class="side">
+            <h2 class="title">SHOPPING
+                IS ALWAYS
+                A GOOD
+                IDEA</h2>
+            </div>
+            <div id="right-side" class="side">
+                <h2 class="title">SHOPPING
+                    IS ALWAYS
+                    A GOOD
+                    IDEA</h2>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+      <div class="slides">
+        <section class="hidden">
+            <div  class="nav sticky height h-res navsecond">
+                <ul class="navlist vis-res">
+                    <div class="logo">
+                        <a href=""><img src="./premiumlogo/onlinelogomaker-032723-2135-2711.png" alt=""></a>
+                    </div>
+                    
+                   <li><a href="#collection">COLLECTION</a></li>
+                   <li><a href="#categories">CATEGORIES</a></li>
+                   <li><a href="#topselling">TOP SELLING</a></li>
+                   <li><a href="#ABOUTUS">ABOUT US</a></li>
+                            
+                </ul>    
+                   
+    
+              
+                <div class="user vis1-res">
+                    <a href=""><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
+                    <a href=""><i class="fa-regular fa-user" style="color: #000000;"></i></a>
+                    <a href=""><i class="fa-regular fa-star" style="color: #000000;"></i></a>
+                    <a href=""><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
+                </div>
+                <div class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    
+    
+                </div>
+            </div>
+            <div id="collection">
+                <div id="slideshow">
+                 
+                   <div class="myslide"><a href=""><img src="./images/homepage-categories/homepage/moving/Homepage-Banner_Streetwear-23_1.webp" alt=""></a></div>
+                   <div class="myslide"><a href=""><img src="./images/homepage-categories/homepage/moving/summer-shirt-banner-desktop1.webp" alt=""></a></div>
+                   <div class="myslide"><a href=""><img src="./images/homepage-categories/homepage/moving/Web-banner_bDCvSMh.webp" alt=""></a></div>
+                   <a class="prev"  onclick="plusSlides(-1)">&#10094</a>
+                   <a class="next"  onclick="plusSlides(1)">&#10095</a>
+                   
+            </div>
+              <div style="text-align: center;">
+               <span class="dot" onclick="currentSlides(1)"></span>
+               <span class="dot" onclick="currentSlides(2)"></span>
+               <span class="dot" onclick="currentSlides(3)"></span>
+            </div>
+
+            </div>
+       </section>
+    </div>
+       <div class="slides">
+        <section class="hidden">
+            <div  class="nav sticky height h-res navsecond ">
+                <ul class="navlist vis-res">
+                    <div class="logo">
+                        <a href=""><img src="./premiumlogo/onlinelogomaker-032723-2135-2711.png" alt=""></a>
+                    </div>
+                    
+                   <li><a href="#collection">COLLECTION</a></li>
+                   <li><a href="#categories">CATEGORIES</a></li>
+                   <li><a href="#topselling">TOP SELLING</a></li>
+                   <li><a href="#ABOUTUS">ABOUT US</a></li>
+                            
+                </ul>    
+                   
+    
+              
+                <div class="user vis1-res">
+                    <a href=""><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
+                    <a href=""><i class="fa-regular fa-user" style="color: #000000;"></i></a>
+                    <a href=""><i class="fa-regular fa-star" style="color: #000000;"></i></a>
+                    <a href=""><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
+                </div>
+                <div class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    
+    
+                </div>
+            </div>
+           
+            <div id="categories">
+                
+                      
+                <div><a href=""><img src="./images/homepage-categories/collections/WebsiteTiles_Small_Tushar_men-version_shirt_gWUrovk.webp" alt=""></a></div>
+                <div><a href=""><img src="./images/homepage-categories/collections/Men-Website-tile-big-one_oversized-t-shirts_DOZd8MJ.webp" alt=""></a></div>
+                <div><a href=""><img src="./images/homepage-categories/collections/Men-Website-tile-big-one_t-shirts_No56PH4.webp" alt=""></a></div>
+                <div><a href=""><img src="./images/homepage-categories/collections/WebsiteTiles_Small_-Full-Sleeve-Tshirt_9vGZoE9.webp" alt=""></a></div>
+                <div><a href=""><img src="./images/homepage-categories/collections/WebsiteTiles_Small_Tushar_men-version_jeans_0ljIrAK.webp" alt=""></a></div>
+                <div><a href=""><img src="./images/homepage-categories/collections/shorts_ul1V18Y.webp" alt=""></a></div>
+                <div><a href=""><img src="./images/homepage-categories/collections/Men-Website-tile-big-one_FL_oversized_Pld9YlD.webp" alt=""></a></div>
+                <div><a href=""><img src="./images/homepage-categories/collections/WebsiteTiles_Small_Tushar_men-version_polo_xmhSCZz.webp" alt=""></a></div>
+
+           
+            </div>
+        </section>
+    </div>
+        <div class="slides">
+        <section class="hidden">
+            <div  class="nav sticky height h-res  navsecond">
+                <ul class="navlist vis-res">
+                    <div class="logo">
+                        <a href=""><img src="./premiumlogo/onlinelogomaker-032723-2135-2711.png" alt=""></a>
+                    </div>
+                    
+                   <li><a href="#collection">COLLECTION</a></li>
+                   <li><a href="#categories">CATEGORIES</a></li>
+                   <li><a href="#topselling">TOP SELLING</a></li>
+                   <li><a href="#ABOUTUS">ABOUT US</a></li>
+                            
+                </ul>    
+                   
+    
+              
+                <div class="user vis1-res">
+                    <a href=""><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
+                    <a href=""><i class="fa-regular fa-user" style="color: #000000;"></i></a>
+                    <a href=""><i class="fa-regular fa-star" style="color: #000000;"></i></a>
+                    <a href=""><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
+                </div>
+                <div class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    
+    
+                </div>
+            </div>
+            <div id="topselling"></div>
+        </section>
+    </div>
+
+        <div class="slides">
+        <section class="hidden"> 
+            <div  class="nav sticky height h-res  navsecond">
+                <ul class="navlist vis-res">
+                    <div class="logo">
+                        <a href=""><img src="./premiumlogo/onlinelogomaker-032723-2135-2711.png" alt=""></a>
+                    </div>
+                    
+                   <li><a href="#collection">COLLECTION</a></li>
+                   <li><a href="#categories">CATEGORIES</a></li>
+                   <li><a href="#topselling">TOP SELLING</a></li>
+                   <li><a href="#ABOUTUS">ABOUT US</a></li>
+                            
+                </ul>    
+                   
+    
+              
+                <div class="user vis1-res">
+                    <a href=""><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
+                    <a href=""><i class="fa-regular fa-user" style="color: #000000;"></i></a>
+                    <a href=""><i class="fa-regular fa-star" style="color: #000000;"></i></a>
+                    <a href=""><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
+                </div>
+                <div class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    
+    
+                </div>
+            </div> <div id="ABOUTUS">
+                <div><a href=""><img src="./images/homepage-categories/homepage-mercendies" alt=""></a></div>
+
+            </div></section>
+        </div>
+        </div>
+      
+
 </body>
+
+<script >
+    const left = document.querySelector("#left-side");
+    console.log(left)
+    const handleMove = e => {
+        left.style.width = `${e.clientX / window.innerWidth * 100}%`;
+    }
     
-</html>
+    document.onmousemove = e => handleMove(e);
+    
+document.ontouchmove = e => handleMove(e.touches[0]);
+
+let burger = document.querySelector(".burger")
+let nav = document.querySelector(".nav")
+let navlist = document.querySelector(".navlist")
+let user = document.querySelector(".user")
+
+burger.addEventListener("click",function(){
+
+    nav.classList.toggle("height")
+    navlist.classList.toggle("vis-res")
+    user.classList.toggle("vis1-res")
+   
+    
+  
+})
+
+  let section = document.querySelectorAll(".hidden")
+
+  const observer = new IntersectionObserver((entries)=> {
+      entries.forEach((element)=> {
+         console.log(element)
+         if(element.isIntersecting){
+            element.target.classList.add('show')
+         }
+         else
+         {
+            element.target.classList.remove('show')
+         }
+      })
+  })
+
+   section.forEach((ele)=> observer.observe(ele))
+
+   // slide 
+   let slideindex = 1
+   showSlides(slideindex)
+
+   function plusSlides(e){
+    showSlides(slideindex+=e)
+   }
+
+   function currentSlides(e){
+    showSlides(slideindex=e)
+   }
+   function showSlides(e){
+ 
+    var slides = document.getElementsByClassName("myslide")
+    var dots = document.getElementsByClassName("dot")
+    
+    
+        if(e>slides.length){
+                slideindex =1
+        }
+        
+    
+        if(e<1){
+                slideindex =slides.length
+        }
+
+        for(let i = 0;i<slides.length;i++)
+        {
+            slides[i].style.display = "none"
+        }
+        for(let i = 0;i<dots.length;i++)
+        {
+            dots[i].className = dots[i].className.replace("active","")
+        }
+        slides[slideindex-1].style.display = "block";
+     
+   }
+ 
+            </script>
+            </html>
