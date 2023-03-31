@@ -5,468 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Project-1</title>
-        <!-- <link rel="stylesheet" href="/gusty-cover-2254/css/index.css"> -->
-        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple"> -->
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
         <script src="https://kit.fontawesome.com/0771c102d1.js" crossorigin="anonymous"></script>
        <style>
-        * {
-    margin: 0;
-    color: black;
-
-    padding: 0px;
-}
-*,
-*::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-    scroll-behavior: smooth;
-    /* transition: 2s; */
-    /* scroll-padding-top: 4rem; */
-
-}
-
-html{
-    scroll-behavior: smooth;
-}
-body {  
-    background-color:white;
-    margin: 0px;
-  }
   
-  .side {
-    display: grid;
-    height: 91vh;
-    overflow: hidden;
-    place-items: center;
-    position: absolute;
-    width: 100%;
-  }
-  
-  .side .title {
-    font-family: "Rubik", sans-serif;
-    font-size: 7vw;
-    margin: 0px 10vw;
-    width: 80vw;
-  }
-  
-  .side .fancy {
-    font-family: "Lobster", cursive;
-    font-size: 1.3em;
-    line-height: 0.8em;
-  }
-  
-  #left-side {
-    background-color:#ed1c94;
-    width: 60%;
-    z-index: 2;
-  }
-  
-  #left-side .title {  
-    color: white;  
-  }
-  
-  #left-side .fancy {
-    color:antiquewhite;
-  }
-  
-  #right-side {
-    background-color:#ffdf38;
-  }
-  
-  #right-side .title {
-    color:black;
-  }
-  
-  #right-side .fancy {
-    color: white;
-  }
-  
-  
-.nav {
-    display: flex;
-    background-color: #ffdf38;
-
-}
-.navlist{
-    width: 60%;
-    background-color: #ffdf38;
-    display: flex;
-     align-items: center;
-     justify-content: space-around;
-}
-.logo {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo img {
-    width: 200px;
-    height: 90px;
-    
-}
- .navlist li{
-list-style: none;
-  font-size: 1.5rem;
-  padding: 10px;     
- }
- .navlist li a{
-    text-decoration: none;
- }
- .navlist li a:hover{
-
-text-decoration: none;
-color: #ed1c94;
-
- }
-
-.user a {
-     margin-left: 30px;
-  
-     border-radius: 50%;
-     width: 80px;
-     height: 80px;
-     text-align: center;
-     position: relative;
-     overflow: hidden;
-}
-.user {
-    display: flex;
-    width: 40%;
-    background-color: #ffdf38;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.user  a .fa-solid{
-font-size: 30px;
-line-height: 80px;
-position: relative;
-z-index: 10;
-}
- 
-.user  a .fa-regular{
-    font-size: 30px;
-    line-height: 80px;
-    position: relative;
-z-index: 10;
-    }
-    .user  a::after{
-        content: "";
-        width: 100%;
-        height: 100%;
-        top: -90px;
-        left: 0px;
-        background: white;
-        position: absolute;
-        transition: 0.5s;
-    }
-    .user a:hover::after{
-        top: 0px;
-       
-    }
-
-    .burger {
-     position: absolute ;
-     cursor: pointer;
-      right: 50%;
-     top: 15px;
-     display: none;
-
-    }
-    .line {
-        width: 33px;
-        background-color: black;
-        height: 4px;
-        margin: 5px 5px;
-    }
-
-    main {
-        height: 100vh;
-        overflow-y: scroll;
-        scroll-snap-type: y proximity;
-    }
-
-    main > section {
-        height: 100vh;
-    
-        justify-content: center;
-        align-items: center;
-        scroll-snap-align: start;
-        scroll-snap-stop: always;
-    }
-
-
-    .toppp {
-    margin-top: 9vh;
-    padding-bottom: 91vh;
-    }
-
-    #collection {
-        height: 100vh;
-        width: 100vw;
-        background-color: black;
-        display: flex;
-         
-         align-items: center;
-       
-    }
-    
-    
-
-    #categories {
-        height: 100vh;
-        background-color: black;
-        display: grid;
-        padding: 150px;
-        grid-template-columns: repeat(4,1fr);
-        gap: 20px;
-        /* padding-bottom: 200px; */
-        padding-top: 200px;
-    }
-    #categories > div {
-        height: 90%;
-        width: 90%;
-        border-radius: 25px;
-    }
-   
-    
-    
-    #officialmercendies {
-        height: 100vh;
-        background-color: wheat;
-    }
-    #topselling {
-        height: 100vh;
-        background-color: yellow;
-    }
-    .sticky{
-        position: fixed;
-        top: 0;
-        width: 100vw;
-    }
-    section {
-        display: grid;
-       
-        min-height: 100vh;
-    }
-
-    .hidden {
-        opacity: 0;
-        transition: all 1.5s;
-        filter: blur(10px);
-    }
-    
-    
-    
-    .show {
-        filter: blur(0px);
-        opacity: 1;
-    }
-   
-
-    #categories img {
-        width: 330px;
-        height: 275px;
-        border-radius: 25px;
-    }
-
-    #container {
-        height: 100vh;
-        overflow-y: scroll;
-        scroll-snap-type: y mandatory;
-    }   
-
-
-    .slides {
-        scroll-snap-align: start;
-    }
-       /* scroll */
-
-       .myslides {
-        display: none;
-       }
-
-       #slideshow img{
-        width: 100vw;
-        height: 60vh;
-
-
-       }
-
-      
-       #slideshow {
-        padding-top: 130px;
-        
-       }
-       .prev,.next{
-        cursor: pointer;
-        top: 50%;
-        position: absolute;
-        padding: 15px;
-        font-weight: bold;
-        font-size: 50px;
-        transition: 0.8s ease;
-        color: #ed1c94;
-        border-radius: 10px;
-       }
-
-       .next{
-        right: 0;
-       }
-
-       .prev:hover,.next:hover {
-        background-color: #ffdf38;
-        color: #000000;
-       }
-
-  
-
-
-
-
-    @media only screen and (max-width:1200px) and (min-width:999px){
-         .navlist {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 60px;
-            overflow: visible;
-         }
-
-         .height{
-            height: 60px;
-            transition: 0.5s;
-        
-         }
-         .vis-res {
-            opacity: 0;
-        
-         }
-         .burger{
-            display: block;
-         }
-      
-         .user {
-            flex-direction:column;
-            
-         }
-         .navsecond {
-            display: none;
-         }
-         #categories {
-            grid-template-columns: repeat(3,1fr);
-            padding-bottom: 150px;
-            padding: 10px;
-            height: 115vh;
-            padding-top: 100px;
-
-         }
-         #categories > div {
-            margin: auto;
-         }
-         
-
-    }
-    @media only screen and (max-width:700px)
-    {
-        .navlist {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 60px;
-            overflow: visible;
-         }
-
-         .height{
-            height: 60px;
-            transition: 0.5s;
-        
-         }
-         .vis-res {
-            opacity: 0;
-        
-         }
-         .burger{
-            display: block;
-         }
-      
-         .user {
-            flex-direction:column;
-            
-         }
-         .navsecond {
-            display: none;
-         }
-        .prev,.next{
-            font-size: 11px;
-        }
-
-        #categories {
-        grid-template-columns: repeat(1,1fr);
-        
-      margin: auto;
-      height: 282vh;
-      padding-top: 100px;
-
-
-
-         }
-         #categories > div {
-            margin: auto;
-         }
-    }
-    @media only screen and (max-width:1000px) and (min-width:699px)
-    {
-        .navlist {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 60px;
-            overflow: visible;
-         }
-
-         .height{
-            height: 60px;
-            transition: 0.5s;
-        
-         }
-         .vis-res {
-            opacity: 0;
-        
-         }
-         .burger{
-            display: block;
-         }
-      
-         .user {
-            flex-direction:column;
-            
-         }
-         .navsecond {
-            display: none;
-         }
-        #categories {
-            grid-template-columns: repeat(2,1fr);
-        
-           margin: auto;
-           height: 149vh;
-           padding-top: 100px;
-
-
-         }
-         #categories > div {
-            margin: auto;
-         }
-       
-    }
-    
-
-        
     
    
        </style>
@@ -485,17 +28,17 @@ z-index: 10;
                <li><a href="#collection">COLLECTION</a></li>
                <li><a href="#categories">CATEGORIES</a></li>
                <li><a href="#topselling">TOP SELLING</a></li>
-               <li><a href="#ABOUTUS"> ABOUT US</a></li>
                         
             </ul>    
                
 
           
             <div class="user vis1-res">
-                <a href=""><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
+                 <input type="text" placeholder="search" class="search box">
+                <a href="./search.html"><i class="fa-solid fa-magnifying-glass mag"  onmouseover="searchbar1()" style="color: #000000;"></i></a>
                 <a href=""><i class="fa-regular fa-user" style="color: #000000;"></i></a>
                 <a href=""><i class="fa-regular fa-star" style="color: #000000;"></i></a>
-                <a href=""><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
+                <a href="./cart.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
             </div>
             <div class="burger">
                 <div class="line"></div>
@@ -534,14 +77,14 @@ z-index: 10;
                    <li><a href="#collection">COLLECTION</a></li>
                    <li><a href="#categories">CATEGORIES</a></li>
                    <li><a href="#topselling">TOP SELLING</a></li>
-                   <li><a href="#ABOUTUS">ABOUT US</a></li>
                             
                 </ul>    
                    
     
               
                 <div class="user vis1-res">
-                    <a href=""><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
+                    <input type="text" placeholder="search" class="search box">
+                    <a href="./search.html"><i class="fa-solid fa-magnifying-glass mag"  onmouseover="searchbar1()" style="color: #000000;"></i></a>
                     <a href=""><i class="fa-regular fa-user" style="color: #000000;"></i></a>
                     <a href=""><i class="fa-regular fa-star" style="color: #000000;"></i></a>
                     <a href=""><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
@@ -556,7 +99,8 @@ z-index: 10;
             </div>
             <div id="collection">
                 <div id="slideshow">
-                 
+                    
+                    
                    <div class="myslide"><a href=""><img src="./images/homepage-categories/homepage/moving/Homepage-Banner_Streetwear-23_1.webp" alt=""></a></div>
                    <div class="myslide"><a href=""><img src="./images/homepage-categories/homepage/moving/summer-shirt-banner-desktop1.webp" alt=""></a></div>
                    <div class="myslide"><a href=""><img src="./images/homepage-categories/homepage/moving/Web-banner_bDCvSMh.webp" alt=""></a></div>
@@ -584,14 +128,14 @@ z-index: 10;
                    <li><a href="#collection">COLLECTION</a></li>
                    <li><a href="#categories">CATEGORIES</a></li>
                    <li><a href="#topselling">TOP SELLING</a></li>
-                   <li><a href="#ABOUTUS">ABOUT US</a></li>
                             
                 </ul>    
                    
     
               
                 <div class="user vis1-res">
-                    <a href=""><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
+                    <input type="text" placeholder="search" class="search box">
+                    <a href="./search.html"><i class="fa-solid fa-magnifying-glass mag"  onmouseover="searchbar1()" style="color: #000000;"></i></a>
                     <a href=""><i class="fa-regular fa-user" style="color: #000000;"></i></a>
                     <a href=""><i class="fa-regular fa-star" style="color: #000000;"></i></a>
                     <a href=""><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
@@ -605,9 +149,9 @@ z-index: 10;
                 </div>
             </div>
            
+            <!-- <h1>CATEGORIES</h1> -->
             <div id="categories">
                 
-                      
                 <div><a href=""><img src="./images/homepage-categories/collections/WebsiteTiles_Small_Tushar_men-version_shirt_gWUrovk.webp" alt=""></a></div>
                 <div><a href=""><img src="./images/homepage-categories/collections/Men-Website-tile-big-one_oversized-t-shirts_DOZd8MJ.webp" alt=""></a></div>
                 <div><a href=""><img src="./images/homepage-categories/collections/Men-Website-tile-big-one_t-shirts_No56PH4.webp" alt=""></a></div>
@@ -615,7 +159,7 @@ z-index: 10;
                 <div><a href=""><img src="./images/homepage-categories/collections/WebsiteTiles_Small_Tushar_men-version_jeans_0ljIrAK.webp" alt=""></a></div>
                 <div><a href=""><img src="./images/homepage-categories/collections/shorts_ul1V18Y.webp" alt=""></a></div>
                 <div><a href=""><img src="./images/homepage-categories/collections/Men-Website-tile-big-one_FL_oversized_Pld9YlD.webp" alt=""></a></div>
-                <div><a href=""><img src="./images/homepage-categories/collections/WebsiteTiles_Small_Tushar_men-version_polo_xmhSCZz.webp" alt=""></a></div>
+                <div><a href=""><img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Colllection-Tiles_ANzcnWu.jpg?format=webp&w=360&dpr=1.5" alt=""></a></div>
 
            
             </div>
@@ -632,14 +176,14 @@ z-index: 10;
                    <li><a href="#collection">COLLECTION</a></li>
                    <li><a href="#categories">CATEGORIES</a></li>
                    <li><a href="#topselling">TOP SELLING</a></li>
-                   <li><a href="#ABOUTUS">ABOUT US</a></li>
                             
                 </ul>    
                    
     
               
                 <div class="user vis1-res">
-                    <a href=""><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
+                    <input type="text" placeholder="search" class="search box">
+                    <a href="./search.html"><i class="fa-solid fa-magnifying-glass mag"  onmouseover="searchbar1()" style="color: #000000;"></i></a>
                     <a href=""><i class="fa-regular fa-user" style="color: #000000;"></i></a>
                     <a href=""><i class="fa-regular fa-star" style="color: #000000;"></i></a>
                     <a href=""><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
@@ -652,46 +196,42 @@ z-index: 10;
     
                 </div>
             </div>
-            <div id="topselling"></div>
+            <!-- <h1>TOP SELLING</h1> -->
+            <div id="topselling">
+                  <div id="topsellcon">
+                    <div class="card">
+                        <img src="./images/topselling/star-wars_2.webp" alt="">
+                        <h3>Star Wars: Rise of Darth Vader</h3>
+                        <h4>Oversized T-Shirts</h4>
+                        <h4>₹999</h4>
+                    </div>
+                    <div class="card">
+                        <img src="./images/topselling/Top-selling-tile_Jeans_1.webp" alt="">
+                        <h3>Solids: Dark Blue (Slim Fit)</h3>
+                        <h4>Jeans</h4>
+                        <h4>₹1799</h4>
+                    </div>
+                    <div class="card">
+                        <img src="./images/topselling/harry-potter_nSiO0tO.webp" alt="">
+                        <h3>Harry Potter: Character Pattern</h3>
+                        <h4>T-Shirts</h4>
+                        <h4>₹649</h4>
+                    </div>
+                    <div class="card">
+                        <img src="./images/topselling/Top-selling-tiles-1-21.webp" alt="">
+                        <h3>Garfield: Made To Lounge</h3>
+                        <h4>Shirts</h4>
+                        <h4>₹1999</h4>
+                    </div>
+                  </div>
+                 
+
+
+            </div>
         </section>
     </div>
 
-        <div class="slides">
-        
-            <div  class="nav sticky height h-res  navsecond">
-                <ul class="navlist vis-res">
-                    <div class="logo">
-                        <a href=""><img src="./premiumlogo/onlinelogomaker-032723-2135-2711.png" alt=""></a>
-                    </div>
-                    
-                   <li><a href="#collection">COLLECTION</a></li>
-                   <li><a href="#categories">CATEGORIES</a></li>
-                   <li><a href="#topselling">TOP SELLING</a></li>
-                   <li><a href="#ABOUTUS">ABOUT US</a></li>
-                            
-                </ul>    
-                   
-    
-              
-                <div class="user vis1-res">
-                    <a href=""><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
-                    <a href=""><i class="fa-regular fa-user" style="color: #000000;"></i></a>
-                    <a href=""><i class="fa-regular fa-star" style="color: #000000;"></i></a>
-                    <a href=""><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
-                </div>
-                <div class="burger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    
-    
-                </div>
-                <section class="hidden"> 
-            </div> <div id="ABOUTUS">
-                <div><a href=""><img src="./images/homepage-categories/homepage-mercendies" alt=""></a></div>
-
-            </div></section>
-        </div>
+     
         </div>
       
 
@@ -699,7 +239,7 @@ z-index: 10;
 
 <script >
     const left = document.querySelector("#left-side");
-    console.log(left)
+    
     const handleMove = e => {
         left.style.width = `${e.clientX / window.innerWidth * 100}%`;
     }
@@ -727,7 +267,7 @@ burger.addEventListener("click",function(){
 
   const observer = new IntersectionObserver((entries)=> {
       entries.forEach((element)=> {
-         console.log(element)
+        
          if(element.isIntersecting){
             element.target.classList.add('show')
          }
@@ -777,6 +317,14 @@ burger.addEventListener("click",function(){
         slides[slideindex-1].style.display = "block";
      
    }
- 
-            </script>
+
+  
+     let inputBar = document.querySelector(".search")
+     function searchbar1(){
+          inputBar.classList.toggle("box")
+          
+     }
+
+   </script>
+   <!-- <script src="./api/api.js"></script> -->
             </html>

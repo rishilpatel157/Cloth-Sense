@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    background-color: #ffdf38;
+    z-index: 10;
+    position: fixed;
+    width: 100vw;
+  
+  
+  }
+  .navlist{
+    width: 60%;
+    background-color: #ffdf38;
+    display: flex;
+     align-items: center;
+     justify-content: left;
+     padding-left: 30px;
+     
+  }
+  .logo {
+    width: 20%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+  }
+  
+  .logo img {
+    width: 200px;
+    height: 90px;
+  
+    
+  }
+  .navlist li{
+  list-style: none;
+  font-size: 1.5rem;
+  padding: 10px;     
+  }
+  .navlist li a{
+    text-decoration: none;
+  }
+  .navlist li a:hover{
+  
+  text-decoration: none;
+  color: #ed1c94;
+  
+  }
+  
+  .user a {
+     margin-left: 30px;
+  
+     border-radius: 50%;
+     width: 80px;
+     height: 80px;
+     text-align: center;
+     position: relative;
+     overflow: hidden;
+  }
+  .user {
+    display: flex;
+    width: 40%;
+    background-color: #ffdf38;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+  }
+  
+  .user  a .fa-solid{
+  font-size: 30px;
+  line-height: 80px;
+  position: relative;
+  z-index: 10;
+  }
+  
+  .user  a .fa-regular{
+    font-size: 30px;
+    line-height: 80px;
+    position: relative;
+  z-index: 10;
+    }
+    .user  a::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: -90px;
+        left: 0px;
+        background: white;
+        position: absolute;
+        transition: 0.5s;
+    }
+    
+    .user a:hover::after{
+        top: 0px;
+       
+    }
+  
+    .burger {
+     position: absolute ;
+     cursor: pointer;
+      right: 45%;
+     top: 15px;
+     display: none;
+  
+    }
+    .line {
+        width: 33px;
+        background-color: black;
+        height: 4px;
+        margin: 5px 5px;
+    }
+
+    .main {
+        width: 100%;
+        display: flex;
+        padding: 150px;
+        padding-top: 200px;
+        
+
+    }
+    .filter {
+      width: 19%;
+      height: 65vh;
+      border: 1px solid black;
+      position: fixed;
+      padding: 10px;
+
+    }
+  
+  .filterproduct {
+    display: inline;
+    font-size: 1.2rem;
+
+}
+
+.filterproduct input{
+  width: 30px;
+  margin-top: 10px;
+    
+  
+}
+
+#content {
+    width: 75%;
+    height: 100vh;
+    margin-left: 25%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content:space-around;
+    gap: 10px;
+}
+.card {
+    width: 280px;
+    height: 400px;
+    text-align: center;
+}
+
+#content img {
+    width: 280px;
+    height: 340px;
+}
+
+
+
+
+
+
+    @media only screen and (max-width:1200px) and (min-width:999px){
+        .navlist {
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           margin-top: 60px;
+           overflow: visible;
+        }
+        .height{
+            height: 60px;
+            transition: 0.5s;
+        
+         }
+         .vis-res {
+            opacity: 0;
+        
+         }
+         .burger{
+            display: block;
+         }
+      
+         .user {
+            flex-direction:column;
+           
+            
+         }
+  
+    }
