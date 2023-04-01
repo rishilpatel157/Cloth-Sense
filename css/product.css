@@ -259,11 +259,11 @@
     
     
     .pDetails {
-        border: 1px solid black;
+        border: 0.01px solid black;
         transition: all 2s linear;
     }
     .description{
-        border: 1px solid black;
+        border: 0.01px solid black;
         
     }
     .description h2{
@@ -284,10 +284,7 @@
     .listdes {
         display: none;
     }
-    .trans {
-        
-        transition: all 2s linear;
-      }
+    
 
       @media only screen and (max-width:1500px){
         .image {
@@ -297,6 +294,23 @@
         .details{
             margin: auto;
         }
+      }
+
+      #size  {
+         width: 100px;
+         height: 30px;
+         margin-top: 10px;
+         margin-bottom: 10px;
+
+      }
+
+
+      #alert {
+        color: red;
+        border-radius: 5px;
+        padding: 5px;
+        padding-left: 10px;
+        margin-bottom: 2px;
       }
     
 

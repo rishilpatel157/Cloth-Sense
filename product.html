@@ -30,7 +30,7 @@
             <a href=""><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
             <a href=""><i class="fa-regular fa-user" style="color: #000000;"></i></a>
             <a href=""><i class="fa-regular fa-star" style="color: #000000;"></i></a>
-            <a href=""><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
+            <a href="./cart.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
         </div>
         <div class="burger">
             <div class="line"></div>
@@ -56,8 +56,22 @@
               <h4 id="category">Shirts</h4>
               <hr>
               <h2 id="price">₹ 999</h3>
-                <div class="size">
-              <button>XXS</button><button>XS</button><button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button><button>XXL</button></div>
+                
+            <select name="Size" id="size">
+                <option value="">Select Size</option>
+                <option value="XXS">Size: XXS</option>
+                <option value="XS">Size: XS</option>
+                <option value="S">Size: S</option>
+                <option value="M">Size: M</option>
+                <option value="L">Size: L</option>
+                <option value="XL">Size: XL</option>
+                <option value="XXL">Size: XXL</option>
+            </select>
+            <div id="alert">
+               
+                    
+               
+            </div>
               <h3>Quantity</h3>
               <select id="qunatity">
                 <option value="01">01</option>
@@ -81,7 +95,7 @@
                 <p> <i class="arrow down listing" ></i></p>
             </div>
             <div class="list trans">
-                <ul>
+                <ul class="trans1">
                     <li class="bold">Material & care</li>
                     <li>100% Cotton</li>
                     <li>Machine Wash</li>
@@ -107,7 +121,7 @@
                 <p> <i class="arrow down descrip"></i></p>
             </div>
             <div class="listdes trans">
-                <ul>
+                <ul class="trans2">
                     <li class="bold">Official Licensed</li>
                     <li>Shop for official licensed Naruto Merch exclusively at The Souled Store. </li>
                 </ul>
@@ -116,5 +130,6 @@
         </div>
     </div>
 </body>
-<script src="./api/product.js"></script>
+<script src="./scripts/product.js"></script>
+
 </html>
