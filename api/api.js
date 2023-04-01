@@ -3,7 +3,9 @@ let shirt = [{
     category: "Shirts",
     images: {
       img1: "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1663569684_4684702.jpg?format=webp&w=480&dpr=1.5",
-      img2: "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1663569684_2629055.jpg?format=webp&w=480&dpr=1.5"
+      img2: "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1663569684_2629055.jpg?format=webp&w=480&dpr=1.5",
+       img3:"",
+       img4:"",
     },
     price: "₹ 1199",
   },

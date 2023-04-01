@@ -39,47 +39,99 @@
 
     <!-- nav end -->
    <div id="container">
-
-        <div id="cart">
-          <div class="card">
+       <div id="cart">
+           <h1 id="empty1"></h1>
+          <!-- <div class="card">
             <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1662711915_8932020.jpg?format=webp&w=480&dpr=1.5" alt="">
+           <div class="title">
             <h2>Solids: Light Yellow</h2>
             <p>Shirts</p>
             <select name="Size" id="size">
-                <option value="XS">Size: XXS</option>
+                <option value="XXS">Size: XXS</option>
                 <option value="XS">Size: XS</option>
-                <option value="XS">Size: S</option>
-                <option value="XS">Size: M</option>
-                <option value="XS">Size: L</option>
-                <option value="XS">Size: XL</option>
-                <option value="XS">Size: XXL</option>
+                <option value="S">Size: S</option>
+                <option value="M">Size: M</option>
+                <option value="L">Size: L</option>
+                <option value="XL">Size: XL</option>
+                <option value="XXL">Size: XXL</option>
             </select>
-            <select id="qunatity">
-                <option value="01">Qty: 01</option>
-                <option value="02">Qty: 02</option>
-                <option value="03">Qty: 03</option>
-                <option value="04">Qty: 04</option>
-                <option value="05">Qty: 05</option>
-                <option value="06">Qty: 06</option>
-                <option value="07">Qty: 07</option>
-                <option value="08">Qty: 08</option>
-                <option value="09">Qty: 09</option>
-                <option value="10">Qty: 10</option>
-               </select>
-               <h3>₹ 999</h3>
-               <div>
-                <button>REMOVE</button>
-                <button>MOVE TO WISHLIST</button>
-               </div>
-
-          </div>
-          
+             <h3>Quantity:- <span id="quantitynumber">1</span></h3>
+             <div class="incdec">
+             <button id="inc">+</button>
+             <button id="dec">-</button>
+            </div>
+            <h3 id="pprice">₹ 999</h3>
+        </div>
+    </div> -->
+    <div id="button">
+         <button id="remove">REMOVE</button>
+         <button id="wishlist">MOVE TO WISHLIST</button>
+        </div>
+        
              
 
         </div>
 
-        <div id="total"></div>
-    </div>
+        <div id="total">
+
+            <button class="porder">PLACE ORDER</button>
+            <div class="discounts">
+            
+                <div class="coupon ">
+                   <h2>Apply Coupon</h2>
+                    <p> <i class="arrow down listing applybtn" ></i></p>
+                </div>
+
+                <div class="applycoupon hidecoupon">
+                 <input type="text" placeholder="Enter Code Here">
+                 <button>APPLY</button>
+               </div>
+               
+               <div class="voucher">
+                   <h2>Gift Voucher</h2>
+                   <p> <i class="arrow down listing giftbtn" ></i></p>
+                </div>
+                
+                      <div class="giftvoucher hidevoucher">
+                        <input type="text" placeholder="Enter Code Here">
+                         <button>APPLY</button>
+                       </div>
+             <div id="giftwrap1">
+                <h2><input type="checkbox" name="" id="giftwrap" >
+                 <label for="giftwrap">Gift Wrap (₹ 25)</h2></label>
+                </div>
+                
+            </div>
+               <h2>BILLING DETAILS</h2>
+
+             <div class="billing">
+
+               <div>
+                <h3>CART TOTAL</h3>
+                <h3 id="carttotal"> ₹ 0</h3>
+               </div>
+
+               <div>
+                <h3>GST</h3>
+                <h3 id="gst"> ₹ 0</h3>
+               </div>
+
+               <div>
+                <h3>Shipping Charges</h3>
+                <h3 id="shipping"> ₹ 50</h3>
+               </div>
+
+               <div>
+                <h2>Total Amount</23>
+                <h3 id="totalamount"> ₹ 0</h3>
+               </div>
+            
+            </div>
+            <button class="porder">PLACE ORDER</button>
+          
+       
+       
+        </div>
     
 </body>
 <script src="./scripts/cart.js"></script>
