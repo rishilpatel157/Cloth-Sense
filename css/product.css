@@ -4,6 +4,24 @@
     box-sizing: border-box;
 }
 
+
+.search {
+    width: 15vw;
+    position: relative;
+    left: 100px;
+    height: 5vh;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    border: none;
+    transition: all 0.5s linear;
+    outline: none;
+  
+  }
+  
+  .box{
+    width: 0;
+  }
+  
 .nav {
     display: flex;
     background-color: #ffdf38;

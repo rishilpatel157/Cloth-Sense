@@ -18,17 +18,16 @@
                 <a  href="./index.html"><img  class="gotop" src="./premiumlogo/onlinelogomaker-032723-2135-2711.png" alt=""></a>
             </div>
             
-                    
+                    <h2>CHECKOUT</h2>
         </ul>    
            
 
       
         <div class="user vis1-res">
-            <a href=""><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
-            <a href=""><i class="fa-regular fa-user" style="color: #000000;"></i></a>
-            <a href=""><i class="fa-regular fa-star" style="color: #000000;"></i></a>
-            <a href="./cart.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
-        </div>
+          <a href="./login.html"><i class="fa-regular fa-user" style="color: #000000;"></i></a>
+          <a href="./wishlist.html"><i class="fa-regular fa-star" style="color: #000000;"></i></a>
+          <a href="./cart.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
+      </div>
         <div class="burger">
             <div class="line"></div>
             <div class="line"></div>
@@ -39,6 +38,91 @@
     </div>
 
     <!-- nav end -->
+
+    <div id="container">
+        <div id="cart">
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h1>Order Billing</h1>
+                    <form>
+                      <div class="form-row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                      </div>
+                      <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                      </div>
+                      <div class="form-row">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                      </div>
+                      <div class="form-row">
+                        <label for="address">Address</label>
+                        <input id="address" name="address" type="text" required></input>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-md-6">
+                    <h1>Payment Details</h1>
+                    <form>
+                      <div class="form-row">
+                        <label for="card">Card Number</label>
+                        <input type="text" id="card" name="card" required>
+                      </div>
+                      <div class="form-row">
+                        <label for="expiry">Expiry Date</label>
+                        <input type="text" id="expiry" name="expiry" required>
+                      </div>
+                      <div class="form-row">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" required>
+                      </div>
+                      <button id="submitbtn" type="submit" class="btn">SAVE</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              
+            
+         </div>
+ 
+         <div id="total">
+ 
+            
+                <h2>BILLING DETAILS</h2>
+ 
+              <div class="billing">
+ 
+                <div>
+                 <h3>CART TOTAL</h3>
+                 <h3 id="carttotal"> ₹ 0</h3>
+                </div>
+ 
+                <div>
+                 <h3>GST</h3>
+                 <h3 id="gst"> ₹ 0</h3>
+                </div>
+ 
+                <div>
+                 <h3>Shipping Charges</h3>
+                 <h3 id="shipping"> ₹ 0</h3>
+                </div>
+ 
+                <div>
+                 <h2>Total Amount</23>
+                 <h3 id="totalamount"> ₹ 0</h3>
+                </div>
+             
+             </div>
+             <button class="porder">CHECKOUT</button>
+           
+        
+        
+         </div>
+
+    
 </body>
 <script src="./scripts/checkout.js"></script>
 </html>

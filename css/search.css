@@ -13,12 +13,31 @@
   
   
   }
+  .search {
+    width: 15vw;
+    position: relative;
+    left: 100px;
+    height: 5vh;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    border: none;
+    transition: all 0.5s linear;
+    outline: none;
+  
+  }
+  
+  .box{
+    width: 0;
+  }
+  
+  
+  
   .navlist{
     width: 60%;
     background-color: #ffdf38;
     display: flex;
      align-items: center;
-     justify-content: left;
+     justify-content:space-around;
      padding-left: 30px;
      
   }
@@ -27,6 +46,7 @@
     display: flex;
     justify-content: left;
     align-items: center;
+    margin-right: 50%;
     
   }
   
@@ -124,7 +144,7 @@
     }
     .filter {
       width: 19%;
-      height: 65vh;
+      height: 70vh;
       border: 1px solid black;
       position: fixed;
       padding: 10px;
@@ -196,4 +216,50 @@
             
          }
   
+    }
+
+    #pricerange {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      width: 120px;
+    }
+    #pricerange input {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      width: 60px;
+      
+    }
+
+    #pricerange input,textarea{
+      padding-left: 10px;
+      height: 20px;
+      border: none;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      border: 0.5px solid black;
+    } 
+
+    #pricerangebtn{
+      background-color: white;
+      border: 0.5px solid black;
+      height: 20px;
+      width: 70px;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+    .filterh {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    #hightolow{
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    #lowtohigh{
+      margin-top: 5px;
+      margin-bottom: 5px;
     }

@@ -42,11 +42,12 @@ gift.addEventListener("click",function(){
 let cart = document.getElementById("cart")
 let totalsum = 0
 
+display(cartdata)
 
 function display(arr){
     cart.innerHTML = ""
     totalsum = 0
-    empty.innerText = ""
+ 
     arr.forEach(function(element,i){
         
         let card = document.createElement("div")
@@ -132,7 +133,9 @@ function display(arr){
         title.append(name1,cat,size,quantityh3,incdec,price)
         inc.addEventListener("click",function(){
             element.quantity++
-            localStorage.setItem("portfolio",JSON.stringify(arr))
+
+            console.log(cartdata)
+            localStorage.setItem("cart",JSON.stringify(arr))
             display(arr)
            })
 
@@ -141,7 +144,7 @@ function display(arr){
             {
     
               element.quantity--
-              localStorage.setItem("portfolio",JSON.stringify(arr))
+              localStorage.setItem("cart",JSON.stringify(arr))
               display(arr)
             }
            })   
@@ -168,16 +171,13 @@ function display(arr){
               }
             }
 
-            console.log(wish)
+          
             if(flag){
            wish.push(element)
            dupwish.push(element)
            localStorage.setItem("wishlist",JSON.stringify(wish))
            localStorage.setItem("duplicatewish",JSON.stringify(dupwish))
            
-      
-           
-       
             }
             else
             {
@@ -246,7 +246,6 @@ if(totalsum==0)
 
 
 
-display(cartdata)
 
 
 let orderbutton1 = document.getElementsByClassName("porder")[0]
@@ -275,5 +274,12 @@ orderbutton2.addEventListener("click",function(){
       window.location.href = "./checkout.html"
     }
 
+})
+
+let searchcatch = document.getElementById("searchcatch")
+let search = document.getElementsByClassName("search")[0]
+searchcatch.addEventListener("mouseover",function(){
+  search.classList.toggle("box")
+ 
 })
 

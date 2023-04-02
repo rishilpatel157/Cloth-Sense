@@ -16,16 +16,17 @@
                 <a  href="./index.html"><img  class="gotop" src="./premiumlogo/onlinelogomaker-032723-2135-2711.png" alt=""></a>
             </div>
             
-                    
+                <h2>Search Product</h2>    
         </ul>    
            
 
       
         <div class="user vis1-res">
-            <a href=""><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
-            <a href=""><i class="fa-regular fa-user" style="color: #000000;"></i></a>
-            <a href=""><i class="fa-regular fa-star" style="color: #000000;"></i></a>
-            <a href=""><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
+            <input type="text" class="search box" id="searchinput" placeholder="Search">
+            <a href="#" id="searchbtn" role="button"><i class="fa-solid fa-magnifying-glass"  id="searchcatch" style="color: #000000;"></i></a>
+            <a href="./login.html"><i class="fa-regular fa-user" style="color: #000000;"></i></a>
+            <a href="./wishlist.html"><i class="fa-regular fa-star" style="color: #000000;"></i></a>
+            <a href="./cart.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
         </div>
         <div class="burger">
             <div class="line"></div>
@@ -40,9 +41,11 @@
 
     <div class="main">
         <!-- filter box start-->
-        <div class="filter">
 
-            <h3>Products</h3>
+        <div class="filter">
+          <h2>Filter</h2>
+          <hr class="filterh">
+            <h3>Product Categoty</h3>
             <div class="filterproduct">
                 <input type="checkbox" name="productsfil" id="selectall" value="selectall"> Select All<br>
                  <input type="checkbox" name="productsfil" id="shirts" value="Shirts"> Shirts<br>
@@ -54,9 +57,28 @@
                  <input type="checkbox" name="productsfil" id="oversizedFull" value="oversizedFull"> Oversized Full Sleeve T-Shirts<br>
                  <input type="checkbox" name="productsfil" id="naruto" value="naruto"> Naruto<br>
             
-            </div>         
+            </div>    
+            <hr class="filterh">     
             <h3>Price</h3>
+               <form  id="pricerange" action="">
+
+                <label for="">Minimum Range</label>
+                <input id="minrangeinput" type="number" required>
+                <label for="">Maximum Range</label>
+                <input id="maxrangeinput" type="number" required>
+                <button type="submit" id="pricerangebtn">Search</button>
+               </form>
+               <hr class="filterh">
+               <h3>Sort by</h3>
+                 <h4>Price : </h4>
+                 <p id="hightolow">High to Low</p>
+                 <h4>Price : <span></span></h4>
+                 <p id="lowtohigh">Low to High</p>
+
+            
         </div>
+
+        
         <div id="content">
            
         

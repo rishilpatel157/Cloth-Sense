@@ -13,6 +13,15 @@ burger.addEventListener("click",function(){
     
 })
 
+let searchcatch = document.getElementById("searchcatch")
+let search = document.getElementsByClassName("search")[0]
+searchcatch.addEventListener("mouseover",function(){
+  search.classList.toggle("box")
+ 
+})
+
+
+
 let wishlist = JSON.parse(localStorage.getItem("wishlist"))||[]
 let dupwishlist = JSON.parse(localStorage.getItem("duplicatewish"))||[]
 // console.log(wishlist)
@@ -45,6 +54,7 @@ console.log(wishlist.length>0)
 
             let buttonremove = document.createElement("button")
           buttonremove.innerText = "Remove From Cart"
+          buttonremove.setAttribute("class","remove")
             
             content.append(card)
             anchor.append(image)

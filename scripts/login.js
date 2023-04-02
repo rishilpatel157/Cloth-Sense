@@ -14,6 +14,9 @@ burger.addEventListener("click",function(){
 })
 
 
+
+
+
 let registerlogin1 = document.getElementById("registerlogin1")
 let regiterhide = document.getElementsByClassName("hideregister")[0]
 let hidelogin = document.getElementById("hidelogin")
@@ -30,6 +33,9 @@ let passwordreenter = document.getElementById("passwordreenter")
 let emaillogin = document.getElementById("emaillogin")
 let passwordlogin = document.getElementById("passwordlogin")
 
+hidelogin.style.opacity = "0"
+loginform.style.opacity = "0"
+loginform.style.zIndex ="0"
 let loginbtn  = document.getElementById("classlogin")
 registerlogin1.addEventListener("click",function(){
       

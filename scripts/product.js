@@ -113,6 +113,7 @@ addbtn.addEventListener("click",function(){
             product.quantity = Number(quantity.value)
             cart.push(product)
             localStorage.setItem("cart",JSON.stringify(cart))
+            alert("Product is added to Cart")
             }   
             else{
                 
@@ -139,6 +140,7 @@ addbtn.addEventListener("click",function(){
           product.size = size.value
         wishlist.push(product)
         localStorage.setItem("wishlist",JSON.stringify(wishlist))
+        alert("Product is added to WishList")
         }
         else{
 
@@ -147,3 +149,16 @@ addbtn.addEventListener("click",function(){
 
     })
     
+
+    let searchcatch = document.getElementById("searchcatch")
+let search = document.getElementsByClassName("search")[0]
+searchcatch.addEventListener("mouseover",function(){
+  search.classList.toggle("box")
+ 
+})
+
+
+index = ""
+
+localStorage.setItem("shirt",JSON.stringify(index))
+

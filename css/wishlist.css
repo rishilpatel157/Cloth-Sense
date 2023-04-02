@@ -14,12 +14,30 @@
   
   
   }
+
+  .search {
+    width: 15vw;
+    position: relative;
+    left: 100px;
+    height: 5vh;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    border: none;
+    transition: all 0.5s linear;
+    outline: none;
+  
+  }
+  
+  .box{
+    width: 0;
+  }
+  
   .navlist{
     width: 70%;
     background-color: #ffdf38;
     display: flex;
      align-items: center;
-     justify-content: left;
+     justify-content:space-around;
      padding-left: 30px;
      
   }
@@ -144,6 +162,20 @@
     #content img {
         width: 280px;
         height: 340px;
+    }
+
+    .remove {
+      background-color: white;
+      height: 30px;
+      width: 170px;
+      border: 0.5px solid black;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      /* font-weight: bold; */
+    }
+    .remove:hover {
+      background-color: red;
+      color: white;
     }
     
     
