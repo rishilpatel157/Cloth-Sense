@@ -122,7 +122,7 @@ buttonlogin.addEventListener("click",function(){
                 alert("Successfully Logged In")
                  logindata[0]= true
                 localStorage.setItem("login",JSON.stringify(logindata))
-                window.location.href = "./checkout.html"
+                window.location.href = "./cart.html"
              }
         });
     }
