@@ -192,7 +192,7 @@ checkbox(naruto,"Naruto")
 
 
 
-  let index = JSON.parse(localStorage.getItem("shirt"))
+  let index = JSON.parse(localStorage.getItem("shirt"))||''
 
   if(index.length>2){
            
