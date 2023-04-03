@@ -102,7 +102,7 @@ addbtn.addEventListener("click",function(){
         }
     }
     if(size.value==""){
-        alert("Please a Size")
+        alert("Please select a Size")
          return
     }
     if(flag){

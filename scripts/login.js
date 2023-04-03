@@ -113,7 +113,7 @@ buttonlogin.addEventListener("click",function(){
     else 
     {
         registerdata.forEach(element => {
-             if(emaillogin.value != element.emailregis && passwordlogin.value != element.passwordregis)
+             if(emaillogin.value != element.emailregis || passwordlogin.value != element.passwordregis)
              {
                 alert("Details are not Matching")
              }
