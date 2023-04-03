@@ -251,20 +251,21 @@ if(totalsum==0)
 let orderbutton1 = document.getElementsByClassName("porder")[0]
 let orderbutton2 = document.getElementsByClassName("porder")[1]
 logindata = JSON.parse(localStorage.getItem("login"))||[]
+  
 orderbutton1.addEventListener("click",function(){
-    if(!logindata)
+    if(logindata[0]!=true)
     {
         alert("Please Register First")
         window.location.href = "./login.html"
     }
     else
     {
-      window.location.href = "./checkout"
+      window.location.href = "./checkout.html"
     }
 
 })
 orderbutton2.addEventListener("click",function(){
-    if(!logindata)
+    if(logindata[0]!=true)
     {
         alert("Please Register First")
         window.location.href = "./login.html"
