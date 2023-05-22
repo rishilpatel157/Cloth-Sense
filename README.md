@@ -20,13 +20,12 @@ To install and run Unwavering Reward locally, follow these steps:
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/rishilpatel157/unwavering-reward-5755.git
+   git clone https://github.com/rishilpatel157/gusty-cover-2254.git
    ```
 
 2. Navigate to the project directory:
 
    ```shell
-   cd unwavering-reward-5755
    ```
 
 3. Install the dependencies:
