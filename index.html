@@ -149,7 +149,7 @@
            
             <!-- <h1>CATEGORIES</h1> -->
 
-            <div id="categories">
+            <!-- <div id="categories">
                 
                 <div id="shirtd"><a ><img src="./images/homepage-categories/collections/WebsiteTiles_Small_Tushar_men-version_shirt_gWUrovk.webp" alt=""></a></div>
                 <div id="oversizedS"><a><img src="./images/homepage-categories/collections/Men-Website-tile-big-one_oversized-t-shirts_DOZd8MJ.webp" alt=""></a></div>
@@ -160,8 +160,24 @@
                 <div id="oversizedfulls"><a ><img src="./images/homepage-categories/collections/Men-Website-tile-big-one_FL_oversized_Pld9YlD.webp" alt=""></a></div>
                 <div id="narutos"><a ><img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Colllection-Tiles_ANzcnWu.jpg?format=webp&w=360&dpr=1.5" alt=""></a></div>
 
+
+
            
-            </div>
+            </div> -->
+
+<!-- css start -->
+<div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+    <div id="shirtd"><a ><img class="image" src="./images/homepage-categories/collections/WebsiteTiles_Small_Tushar_men-version_shirt_gWUrovk.webp" draggable="false" /></a></div>
+    <div id="oversizedS"><a ><img class="image" src="./images/homepage-categories/collections/Men-Website-tile-big-one_oversized-t-shirts_DOZd8MJ.webp" draggable="false" /></a></div>
+    <div id="tshirts"><a ><img class="image" src="./images/homepage-categories/collections/Men-Website-tile-big-one_t-shirts_No56PH4.webp" draggable="false" /></a></div>
+    <div id="fullslevess"><a ><img class="image" src="./images/homepage-categories/collections/WebsiteTiles_Small_-Full-Sleeve-Tshirt_9vGZoE9.webp" draggable="false" /></a></div>
+    <div id="jeanss"><a ><img class="image" src="./images/homepage-categories/collections/WebsiteTiles_Small_Tushar_men-version_jeans_0ljIrAK.webp" draggable="false" /></a></div>
+    <div id="shortss"><a ><img class="image" src="./images/homepage-categories/collections/shorts_ul1V18Y.webp" draggable="false" /></a></div>
+    <div id="oversizedfulls"><a ><img class="image" src="./images/homepage-categories/collections/Men-Website-tile-big-one_FL_oversized_Pld9YlD.webp" draggable="false" /></a></div>
+    <div id="narutos"><a ><img class="image" src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Colllection-Tiles_ANzcnWu.jpg?format=webp&w=360&dpr=1.5" draggable="false" /></a></div>
+</div>
+<!-- css end -->
+
         </section>
     </div>
         <div class="slides">
@@ -367,7 +383,51 @@ nextpage(narutos,"Naruto")
 
 
 
+const track = document.getElementById("image-track");
 
+const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
+
+const handleOnUp = () => {
+  track.dataset.mouseDownAt = "0";  
+  track.dataset.prevPercentage = track.dataset.percentage;
+}
+
+const handleOnMove = e => {
+  if(track.dataset.mouseDownAt === "0") return;
+  
+  const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
+        maxDelta = window.innerWidth / 2;
+  
+  const percentage = (mouseDelta / maxDelta) * -100,
+        nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
+        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+  
+  track.dataset.percentage = nextPercentage;
+  
+  track.animate({
+    transform: `translate(${nextPercentage}%, -50%)`
+  }, { duration: 1200, fill: "forwards" });
+  
+  for(const image of track.getElementsByClassName("image")) {
+    image.animate({
+      objectPosition: `${100 + nextPercentage}% center`
+    }, { duration: 1200, fill: "forwards" });
+  }
+}
+
+/* -- Had to add extra lines for touch events -- */
+
+window.onmousedown = e => handleOnDown(e);
+
+window.ontouchstart = e => handleOnDown(e.touches[0]);
+
+window.onmouseup = e => handleOnUp(e);
+
+window.ontouchend = e => handleOnUp(e.touches[0]);
+
+window.onmousemove = e => handleOnMove(e);
+
+window.ontouchmove = e => handleOnMove(e.touches[0]);
 
 
 

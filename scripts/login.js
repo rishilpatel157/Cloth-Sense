@@ -112,10 +112,13 @@ buttonlogin.addEventListener("click",function(){
     }
     else 
     {
+        flag = false
         registerdata.forEach(element => {
              if(emaillogin.value != element.emailregis || passwordlogin.value != element.passwordregis)
              {
+                                                   
                 alert("Details are not Matching")
+                
              }
              else if (emaillogin.value == element.emailregis && passwordlogin.value == element.passwordregis)
              {
@@ -124,6 +127,12 @@ buttonlogin.addEventListener("click",function(){
                 localStorage.setItem("login",JSON.stringify(logindata))
                 window.location.href = "./cart.html"
              }
+
+         
         });
+        
+        if(flag){
+
+        }
     }
 })
