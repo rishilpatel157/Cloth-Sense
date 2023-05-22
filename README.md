@@ -78,3 +78,10 @@ JavaScript is used to enhance the interactivity and functionality of the website
 
 ## Browser Compatibility
 The website has been tested and is compatible with modern web browsers, including Chrome, Firefox, Safari, and Edge. Compatibility with older browser versions is not guaranteed.
+## Deployment
+To deploy the Clothsense website, follow these steps:
+
+Host the files on a web server or deploy to a hosting platform of your choice.
+Ensure that the server supports the necessary technologies (HTML, CSS, JavaScript).
+Configure any backend functionality or APIs if required.
+Test the website thoroughly after deployment to ensure proper functioning.
