@@ -21,11 +21,12 @@ Contact
 - Wishlist functionality to save and track favorite items.
 - Order history to review previous purchases.
 - Technologies Used
-- The Clothsense website is developed using the following technologies:
 
-## HTML5
-## CSS3
-## JavaScript
+##The Clothsense website is developed using the following technologies:
+
+- HTML5
+- CSS3
+- JavaScript
 
 ## HTML Structure
 The HTML structure of the website follows best practices and is organized into sections such as header, navigation, main content area, product listings, and footer. It utilizes appropriate HTML tags to provide a semantic structure.
