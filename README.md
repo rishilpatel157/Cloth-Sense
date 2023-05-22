@@ -12,3 +12,10 @@ Responsiveness
 Browser Compatibility
 Deployment
 Contact
+## Features
+Browse and search for a wide range of men's clothing products.
+View detailed product information, including images, descriptions, sizes, and prices.
+Add items to the shopping cart and proceed to checkout for secure online payment.
+User authentication and account management for personalized experiences.
+Wishlist functionality to save and track favorite items.
+Order history to review previous purchases.
