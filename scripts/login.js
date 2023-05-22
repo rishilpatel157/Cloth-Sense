@@ -106,33 +106,40 @@ loginbtn.addEventListener("click",function(){
 
 let logindata = JSON.parse(localStorage.getItem("login"))||[]
 buttonlogin.addEventListener("click",function(){
+    flag = false
     if(emaillogin.value=="" || passwordlogin.value=="")
     {
         alert("Please enter complete details")
+        return
     }
     else 
     {
-        flag = false
         registerdata.forEach(element => {
              if(emaillogin.value != element.emailregis || passwordlogin.value != element.passwordregis)
              {
-                                                   
-                alert("Details are not Matching")
-                
+                flag = false;                                   
+               
+                return
              }
              else if (emaillogin.value == element.emailregis && passwordlogin.value == element.passwordregis)
              {
-                alert("Successfully Logged In")
-                 logindata[0]= true
-                localStorage.setItem("login",JSON.stringify(logindata))
-                window.location.href = "./cart.html"
+                flag = true;
+               return
              }
 
          
         });
         
         if(flag){
-
+            alert("Successfully Logged In")
+            logindata[0]= true
+           localStorage.setItem("login",JSON.stringify(logindata))
+           window.location.href = "./cart.html"
+        }
+        else
+        {
+            alert("Details are not Matching")
+            return
         }
     }
 })
