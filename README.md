@@ -1,5 +1,5 @@
-##Clothsense
-##Table of Contents
+## Clothsense
+## Table of Contents
 Overview
 Features
 Technologies Used
