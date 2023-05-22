@@ -28,3 +28,9 @@ The Clothsense website is developed using the following technologies:
 
 ## HTML Structure
 The HTML structure of the website follows best practices and is organized into sections such as header, navigation, main content area, product listings, and footer. It utilizes appropriate HTML tags to provide a semantic structure.
+
+## CSS Styles
+The CSS styles for the Gusty Cover 2254 website are implemented to create an attractive and intuitive user interface. The styles are organized using appropriate selectors, and best practices such as modular and reusable styles are followed.
+
+## JavaScript Functionality
+JavaScript is used to enhance the interactivity and functionality of the website. It handles user interactions, form validations, cart management, and other dynamic features. JavaScript libraries or frameworks are not used in this project.
