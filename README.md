@@ -34,3 +34,6 @@ The CSS styles for the Gusty Cover 2254 website are implemented to create an att
 
 ## JavaScript Functionality
 JavaScript is used to enhance the interactivity and functionality of the website. It handles user interactions, form validations, cart management, and other dynamic features. JavaScript libraries or frameworks are not used in this project.
+
+## Browser Compatibility
+The website has been tested and is compatible with modern web browsers, including Chrome, Firefox, Safari, and Edge. Compatibility with older browser versions is not guaranteed.
