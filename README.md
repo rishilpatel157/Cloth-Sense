@@ -1,6 +1,18 @@
 ## Clothsense
 Clothsense is a men's clothing website designed to provide a seamless online shopping experience for men's fashion. This documentation provides an overview of the website, its features, and the technologies used in its development.
 
+## Table of Contents
+- Installation and usage
+- Overview
+- Features
+- Technologies Used
+- File Structure
+- HTML Structure
+- CSS Styles
+- JavaScript Functionality
+- Browser Compatibility
+- Deployment
+
 ## Installation and usage 
 
 To install and run Unwavering Reward locally, follow these steps:
@@ -38,16 +50,7 @@ To install and run Unwavering Reward locally, follow these steps:
    ```
 
 7. Access the application in your web browser at `http://localhost:3000`.
-## Table of Contents
-- Overview
-- Features
-- Technologies Used
-- File Structure
-- HTML Structure
-- CSS Styles
-- JavaScript Functionality
-- Browser Compatibility
-- Deployment
+
 ## Features
 
 - Browse and search for a wide range of men's clothing products.
