@@ -22,6 +22,6 @@ Order history to review previous purchases.
 Technologies Used
 The Clothsense website is developed using the following technologies:
 
-HTML5
-CSS3
-JavaScript
+## HTML5
+## CSS3
+## JavaScript
