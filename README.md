@@ -1,27 +1,43 @@
 ## Clothsense
 Clothsense is a men's clothing website designed to provide a seamless online shopping experience for men's fashion. This documentation provides an overview of the website, its features, and the technologies used in its development.
 
-Installation and usage
+## Installation and usage 
+
 To install and run Unwavering Reward locally, follow these steps:
 
-Clone the repository:
+1. Clone the repository:
 
-git clone https://github.com/rishilpatel157/unwavering-reward-5755.git
-Navigate to the project directory:
+   ```shell
+   git clone https://github.com/rishilpatel157/unwavering-reward-5755.git
+   ```
 
-cd unwavering-reward-5755
-Install the dependencies:
+2. Navigate to the project directory:
 
-npm install
-Configure the environment variables. Rename the .env.example file to .env and provide the necessary configuration values.
+   ```shell
+   cd unwavering-reward-5755
+   ```
 
-Build the project:
+3. Install the dependencies:
 
-npm run build
-Start the application:
+   ```shell
+   npm install
+   ```
 
-npm start
-Access the application in your web browser at http://localhost:3000.
+4. Configure the environment variables. Rename the `.env.example` file to `.env` and provide the necessary configuration values.
+
+5. Build the project:
+
+   ```shell
+   npm run build
+   ```
+
+6. Start the application:
+
+   ```shell
+   npm start
+   ```
+
+7. Access the application in your web browser at `http://localhost:3000`.
 ## Table of Contents
 - Overview
 - Features
