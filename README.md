@@ -12,6 +12,7 @@ Clothsense is a men's clothing website designed to provide a seamless online sho
 - JavaScript Functionality
 - Browser Compatibility
 - Deployment
+- Contact
 
 ## Installation and usage 
 
@@ -85,3 +86,6 @@ Host the files on a web server or deploy to a hosting platform of your choice.
 Ensure that the server supports the necessary technologies (HTML, CSS, JavaScript).
 Configure any backend functionality or APIs if required.
 Test the website thoroughly after deployment to ensure proper functioning.
+
+## Contact
+For any inquiries or support related to the Gusty Cover 2254 website, please contact us at contact@gustycover2254.com.
