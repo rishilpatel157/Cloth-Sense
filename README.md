@@ -26,6 +26,7 @@ To install and run Unwavering Reward locally, follow these steps:
 2. Navigate to the project directory:
 
    ```shell
+   cd gusty-cover-2254
    ```
 
 3. Install the dependencies:
