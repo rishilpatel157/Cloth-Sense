@@ -25,3 +25,6 @@ The Clothsense website is developed using the following technologies:
 ## HTML5
 ## CSS3
 ## JavaScript
+
+## HTML Structure
+The HTML structure of the website follows best practices and is organized into sections such as header, navigation, main content area, product listings, and footer. It utilizes appropriate HTML tags to provide a semantic structure.
